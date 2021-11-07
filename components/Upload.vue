@@ -94,7 +94,7 @@ export default {
         upload_preset: "default-preset",
         folder: "nuxtjs-video-trimmer",
       });
-      console.log(this.cloudinaryVideo);
+      this.$emit("uploaded", this.cloudinaryVideo);
       this.uploading = false;
     },
   },
